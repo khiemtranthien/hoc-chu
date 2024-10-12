@@ -1,34 +1,20 @@
 {
-  "name": "Hoc Chu",
-  "short_name": "Hoc Chu",
-  "icons": [{
-    "src": "images/hoc-chu-icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    }, {
-      "src": "images/hoc-chu-icon-144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    }, {
-      "src": "images/hoc-chu-icon-152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    }, {
-      "src": "images/hoc-chu-icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    }, {
-      "src": "images/hoc-chu-icon-256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    }, {
-      "src": "images/hoc-chu-icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }],
-  "lang": "en-US",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "white",
-  "theme_color": "white"
+    "name": "Hoc Chu",
+    "short_name": "HocChu",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "icons/lanvy-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/lanvy-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
