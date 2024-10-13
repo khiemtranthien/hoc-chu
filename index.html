@@ -6,17 +6,44 @@
     <title>Lan Vy</title>
     <link rel="stylesheet" href="main.css">
     <link rel="manifest" href="manifest.json">
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div id="result">This is a text</div>
-        <input type="checkbox" id="lowcase" name="lowcase">
-        <label for="lowcase">Lowcase</label>
-        <br/>
-        <button id="next">Show Next</button>
-        <br>
-        
+        <div class="row">
+            <div class="col-12">
+                <!-- Radio button group that has options Hoc Chu and Hoc Toan -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="subject" id="rad-hoc-chu" value="Hoc Chu" checked>
+                    <label class="form-check-label" for="rad-hoc-chu">Hoc Chu</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="subject" id="rad-hoc-toan" value="Hoc Toan">
+                    <label class="form-check-label" for="rad-hoc-toan">Hoc Toan</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div id="result" class="alert alert-primary mt-5">a b c d</div>
+                <div class="d-flex flex-column align-items-center mt-5">
+                    <div class="form-check" id="lowcase-group">
+                        <input type="checkbox" class="form-check-input" id="lowcase" name="lowcase">
+                        <label class="form-check-label" for="lowcase">Lowcase</label>
+                    </div>
+                    <div class="form-check" id="subtract-group" style="display: none;">
+                        <input type="checkbox" class="form-check-input" id="subtract" name="subtract">
+                        <label class="form-check-label" for="subtract">Subtract</label>
+                    </div>
+                    <button id="next" class="btn btn-primary mt-3">Next</button>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
     </div>
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
